@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     private float speed;
     private bool isMove;
     private int speedBoost = 0;
-    public float shiftDownSpeed = 2f;
+    public float shiftDownSpeed;
 
     Vector2 oldPos;
 
@@ -50,7 +50,10 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         // reset moveDelta
-        moveDelta = new Vector2(x, y);
+        if(Input.GetAxisRaw("Horizontal") != 0 && Input.GetAxisRaw("Vertical") != 0)
+            moveDelta = new Vector2(x, y).normalized;
+        else
+            moveDelta = new Vector2(x, y);
 
         this.Move();
         this.Animate();

@@ -13,7 +13,7 @@ public class SceneTransition : MonoBehaviour
             // mi memorizzo Index della scena
             int indexFloor = SceneManager.GetActiveScene().buildIndex;
 
-            // se nell'opggetto contiene licero, vado a selezionare iil piano per quanto riguarda il liceo
+            // se l'oggetto contiene liceo, vado a selezionare il piano per quanto riguarda il liceo
             // in caso contrario spostarsi sul piano dell'itis
             if (!name.Contains("liceo")) // ramo non liceo
             {

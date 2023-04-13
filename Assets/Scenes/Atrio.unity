@@ -26671,7 +26671,7 @@ PrefabInstance:
       propertyPath: sentences.Array.data[5]
       value: Non ti devi scusare. Sono il professor Pozzetti, mi correggo Ingegnere
         Pozzetti. In questa scuola insegno principalmente "Matematica" e apprenderai
-        uno sacco di cose con me.
+        un sacco di cose con me.
       objectReference: {fileID: 0}
     - target: {fileID: 3809499574723217138, guid: ea2447f99cb555f43a698cde675c180f, type: 3}
       propertyPath: sentences.Array.data[6]
