@@ -16144,6 +16144,7 @@ GameObject:
   - component: {fileID: 358859216}
   - component: {fileID: 358859218}
   - component: {fileID: 358859212}
+  - component: {fileID: 358859219}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -16164,6 +16165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 358859216}
+  speed: 0
   shiftDownSpeed: 0.5
 --- !u!212 &358859213
 SpriteRenderer:
@@ -16308,6 +16310,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5da315878b593d469e70eba49ceddec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &358859219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358859211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: b076f9ce42bdada4d982835d24037072, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 1438289906}
 --- !u!1 &370638155
 GameObject:
   m_ObjectHideFlags: 0
@@ -16361,6 +16393,7 @@ GameObject:
   - component: {fileID: 373089420}
   - component: {fileID: 373089419}
   - component: {fileID: 373089418}
+  - component: {fileID: 373089423}
   m_Layer: 5
   m_Name: CrossFade
   m_TagString: Untagged
@@ -16469,6 +16502,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &373089423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373089417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2adbc559896fe124f81dd09f525bb19c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &410042021
 GameObject:
   m_ObjectHideFlags: 0
@@ -25912,7 +25957,6 @@ GameObject:
   - component: {fileID: 627725493}
   - component: {fileID: 627725492}
   - component: {fileID: 627725497}
-  - component: {fileID: 627725498}
   m_Layer: 5
   m_Name: Pause Menu
   m_TagString: Untagged
@@ -26026,19 +26070,6 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!114 &627725498
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 627725491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f12f1899fc99a64c9bcedc0addcb774, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  eventSystem: {fileID: 871003664}
 --- !u!1 &688298488
 GameObject:
   m_ObjectHideFlags: 0
@@ -26283,7 +26314,6 @@ GameObject:
   m_Component:
   - component: {fileID: 789789094}
   - component: {fileID: 789789093}
-  - component: {fileID: 789789092}
   m_Layer: 0
   m_Name: 0_atrio_left_up
   m_TagString: Untagged
@@ -26291,19 +26321,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &789789092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 789789091}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa3aacef7f15fd6468ca4c84a2f22c76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  initialPosition: {fileID: 11400000, guid: 8ac5bb9406dbcac43a6f8ab5858b9f43, type: 2}
 --- !u!61 &789789093
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35707,6 +35724,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1342630500}
   - component: {fileID: 1342630499}
+  - component: {fileID: 1342630501}
   m_Layer: 5
   m_Name: LevelLoader
   m_TagString: Untagged
@@ -35743,6 +35761,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1342630501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342630498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2adbc559896fe124f81dd09f525bb19c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1388687163
 PrefabInstance:
   m_ObjectHideFlags: 0

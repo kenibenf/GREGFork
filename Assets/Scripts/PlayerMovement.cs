@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -6,9 +7,8 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 moveDelta;
     public Animator animator;
     private float x, y;
-    private float speed;
+    public float speed;
     private bool isMove;
-    private int speedBoost = 0;
     public float shiftDownSpeed;
 
     Vector2 oldPos;
@@ -20,48 +20,27 @@ public class PlayerMovement : MonoBehaviour
         rb.freezeRotation = true;
         this.transform.position = PlayerState.getPosition();
     }
-
+    
     private void Update()
     {
         speed = PlayerState.speed;
-        // ritorna i valori di x e y
-
-        if (Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            speedBoost = 1;
-        }
-        if (Input.GetKeyUp(KeyCode.LeftShift))
-        {
-            speedBoost = 0;
-        }
-
-        if (speedBoost == 1)
-        {
-            x = Input.GetAxisRaw("Horizontal") * shiftDownSpeed;
-            y = Input.GetAxisRaw("Vertical") * shiftDownSpeed;
-        }
-        else
-        {
-            x = Input.GetAxisRaw("Horizontal");
-            y = Input.GetAxisRaw("Vertical");
-        }
-    }
-
-    private void FixedUpdate()
-    {
-        // reset moveDelta
-        if(Input.GetAxisRaw("Horizontal") != 0 && Input.GetAxisRaw("Vertical") != 0)
-            moveDelta = new Vector2(x, y).normalized;
-        else
-            moveDelta = new Vector2(x, y);
-
-        this.Move();
+        rb.velocity = moveDelta * speed;
         this.Animate();
     }
+    
+    public void OnShift(){
+        speed = speed * shiftDownSpeed;
 
-    private void Move()
+    }
+    /* 
+        funzione chiamata ogni volta che l'utente preme wasd/freccette 
+        (se si vuole cambiare combinazione di tasti o aggiungerne altri si fa dal componente Player Input del Player)
+    */
+    public void OnMove(InputValue value)
     {
-        rb.velocity = moveDelta * speed;
+        moveDelta = value.Get<Vector2>(); // prende il valore da inputValue, che è passato tramite l'input system di unity
+        x = moveDelta.x;
+        y = moveDelta.y;
     }
 
     private void Animate()

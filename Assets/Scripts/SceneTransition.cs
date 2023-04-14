@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 
 public class SceneTransition : MonoBehaviour
 {
@@ -43,6 +44,8 @@ public class SceneTransition : MonoBehaviour
 
             PlayerState.setPosition(initialPosition);
             LevelSystem.current.ChangeScene(indexFloor);
+
+            GameObject.Find ("Player").GetComponent<PlayerInput> ().DeactivateInput();
         }
     }
 }
