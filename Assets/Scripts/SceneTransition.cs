@@ -23,15 +23,16 @@ public class SceneTransition : MonoBehaviour
                 else if (name.Contains("down"))
                     indexFloor--;
                 else if (name.Contains("dSP"))
-                    indexFloor=7;
+                    indexFloor=6; // secret room
                 else if (name.Contains("uSP"))
                     indexFloor=3;
                 else if (name.Contains("menu"))
                     indexFloor=0;
             }
+
             else // ramo lice 
             {
-                indexFloor = 6;
+                indexFloor = 8;
                 if (name.Contains("up"))
                     indexFloor++;
                 else if (name.Contains("down"))
