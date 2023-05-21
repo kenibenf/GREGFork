@@ -16,25 +16,25 @@ TextureImporter:
     second: vicepresidenza_muro_2
   - first:
       213: -1314397027047599746
-    second: vicepresidenza_4
+    second: vicepresidenza_banco1
   - first:
       213: 7840612499518068711
-    second: vicepresidenza_5
+    second: vicepresidenza_banco2
   - first:
       213: -2248750454429972828
-    second: vicepresidenza_6
+    second: vicepresidenza_banco3
   - first:
       213: -1970399120012295941
     second: vicepresidenza_muro_3
   - first:
       213: 571192462223046956
-    second: vicepresidenza_8
+    second: vicepresidenza_banco4
   - first:
       213: -2353491935467208046
-    second: vicepresidenza_9
+    second: vicepresidenza_banco5
   - first:
       213: -5099973131571651178
-    second: vicepresidenza_10
+    second: vicepresidenza_banco6
   - first:
       213: -758076144092876435
     second: vicepresidenza_11
@@ -43,13 +43,13 @@ TextureImporter:
     second: vicepresidenza_muro_4
   - first:
       213: -2953296574463172557
-    second: vicepresidenza_13
+    second: vicepresidenza_banco7
   - first:
       213: -6115223241711788814
-    second: vicepresidenza_14
+    second: vicepresidenza_banco8
   - first:
       213: -8835681634171703987
-    second: vicepresidenza_15
+    second: vicepresidenza_banco9
   - first:
       213: 5893092679343322616
     second: vicepresidenza_16
@@ -259,7 +259,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vicepresidenza_4
+      name: vicepresidenza_banco1
       rect:
         serializedVersion: 2
         x: 112
@@ -280,7 +280,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vicepresidenza_5
+      name: vicepresidenza_banco2
       rect:
         serializedVersion: 2
         x: 128
@@ -301,7 +301,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vicepresidenza_6
+      name: vicepresidenza_banco3
       rect:
         serializedVersion: 2
         x: 144
@@ -343,7 +343,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vicepresidenza_8
+      name: vicepresidenza_banco4
       rect:
         serializedVersion: 2
         x: 112
@@ -364,7 +364,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vicepresidenza_9
+      name: vicepresidenza_banco5
       rect:
         serializedVersion: 2
         x: 128
@@ -385,7 +385,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vicepresidenza_10
+      name: vicepresidenza_banco6
       rect:
         serializedVersion: 2
         x: 144
@@ -448,7 +448,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vicepresidenza_13
+      name: vicepresidenza_banco7
       rect:
         serializedVersion: 2
         x: 112
@@ -469,7 +469,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vicepresidenza_14
+      name: vicepresidenza_banco8
       rect:
         serializedVersion: 2
         x: 128
@@ -490,7 +490,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vicepresidenza_15
+      name: vicepresidenza_banco9
       rect:
         serializedVersion: 2
         x: 144
@@ -611,27 +611,6 @@ TextureImporter:
       bones: []
       spriteID: be2d502b428317390800000000000000
       internalID: -7822409347509136661
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: vicepresidenza_23
-      rect:
-        serializedVersion: 2
-        x: 92
-        y: 119
-        width: 10
-        height: 2
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e46d91b47f8fc3ab0800000000000000
-      internalID: -5026869343051721138
       vertices: []
       indices: 
       edges: []
