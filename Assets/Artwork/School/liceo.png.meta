@@ -842,6 +842,9 @@ TextureImporter:
   - first:
       213: -8798202687796929696
     second: Banco-aulaprof-bug
+  - first:
+      213: 1385534138269181208
+    second: Liceo_muro_entrata
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -6818,6 +6821,27 @@ TextureImporter:
       bones: []
       spriteID: 06b1af3354186e580800000000000000
       internalID: -8798202687796929696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Liceo_muro_entrata
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 533
+        width: 239
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81526b735f76a3310800000000000000
+      internalID: 1385534138269181208
       vertices: []
       indices: 
       edges: []
