@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efaea356d8e90394ba1ae3225ee9eabc, type: 3}
   m_Name: RightMenoUno
   m_EditorClassIdentifier: 
-  initialValue: {x: 16, y: 1.7}
+  initialValue: {x: 15.9, y: 1.9}

@@ -16166,7 +16166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 358859216}
   speed: 0
-  shiftDownSpeed: 0.5
+  shiftDownSpeed: 2
 --- !u!212 &358859213
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26378,6 +26378,7 @@ GameObject:
   m_Component:
   - component: {fileID: 789789094}
   - component: {fileID: 789789093}
+  - component: {fileID: 789789092}
   m_Layer: 0
   m_Name: 0_atrio_left_up
   m_TagString: Untagged
@@ -26385,6 +26386,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &789789092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789789091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa3aacef7f15fd6468ca4c84a2f22c76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialPosition: {fileID: 11400000, guid: 8ac5bb9406dbcac43a6f8ab5858b9f43, type: 2}
 --- !u!61 &789789093
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37185,7 +37199,7 @@ GameObject:
   - component: {fileID: 1959365368}
   - component: {fileID: 1959365367}
   m_Layer: 0
-  m_Name: 0_liceo
+  m_Name: Liceo_pianoTerra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

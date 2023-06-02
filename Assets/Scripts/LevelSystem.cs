@@ -80,10 +80,12 @@ public class LevelSystem : MonoBehaviour
             floorName = "Primo Piano";
         else if (buildIndex == baseBuildIndex + 2)
             floorName = "Secondo Piano";
-        else if (buildIndex == 6)
+        else if (buildIndex == 7)
             floorName = "Piano Terra Liceo";
-        else if(buildIndex == 7)
+        else if(buildIndex == 6)
             floorName = "Camera dei segreti";
+        else if(buildIndex == 8)
+            floorName = "Piano -1 Liceo";
 
         StartCoroutine(TypeWriterEffect(floorName));
     }
