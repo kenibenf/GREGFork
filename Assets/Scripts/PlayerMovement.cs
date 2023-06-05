@@ -25,33 +25,34 @@ public class PlayerMovement : MonoBehaviour
         rb.freezeRotation = true;
         this.transform.position = PlayerState.getPosition();
     }
-    
-    private void Update()
-    {
 
+    private void FixedUpdate()
+    {
         //PER MUOVERSI
         moveDelta = moveAction.ReadValue<Vector2>(); // prende il valore dall'azione Move, che è passato tramite l'input system di unity
-        x = moveDelta.x; 
+        x = moveDelta.x;
         y = moveDelta.y;
 
         //PER SHIFTARE
         shiftAction.performed += OnShift; // se e' stato premuto shift, allora esegui OnShift()
         shiftAction.canceled += OnShiftReleased; // se e' stato rilasciato shift, allora esegui OnShiftReleased()
 
-
         speed = PlayerState.speed * shiftt;
         rb.velocity = moveDelta * speed;
         this.Animate();
     }
+
     // sinceramente il parametro Callbackcontext non so cosa sia, ma serviva affinche funzionasse.
-    private void OnShift(InputAction.CallbackContext contex){ 
+    private void OnShift(InputAction.CallbackContext contex)
+    {
         shiftt = shiftDownSpeed; //setto la velocità a 0.5
     }
 
-    private void OnShiftReleased(InputAction.CallbackContext contex){
+    private void OnShiftReleased(InputAction.CallbackContext contex)
+    {
         shiftt = 1; // una volta rilasciato shift, risetto la velocità a 1
     }
-    
+
     /* 
         funzione chiamata ogni volta che l'utente preme wasd/freccette 
         (se si vuole cambiare combinazione di tasti o aggiungerne altri si fa dal componente Player Input del Player)
