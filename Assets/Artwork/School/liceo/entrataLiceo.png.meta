@@ -14,6 +14,27 @@ TextureImporter:
   - first:
       213: -6129725493409658064
     second: tvLiceo_4
+  - first:
+      213: -7675591323971714527
+    second: Lavagna_Liceo1
+  - first:
+      213: -388421638356903428
+    second: l
+  - first:
+      213: -1505154745028171009
+    second: Lavagna_Liceo3
+  - first:
+      213: 6211623709276668346
+    second: Lavagna_Liceo4
+  - first:
+      213: 5786592467556977734
+    second: Lavagna_Liceo5
+  - first:
+      213: 5451834244551899548
+    second: Campanella_liceo1
+  - first:
+      213: -7357305684871350373
+    second: Lavagna_Liceo2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -194,6 +215,153 @@ TextureImporter:
       bones: []
       spriteID: 03b49a2f327deeaa0800000000000000
       internalID: -6129725493409658064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lavagna_Liceo1
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 126
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 122889d9b52da7590800000000000000
+      internalID: -7675591323971714527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: l
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 126
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf959aee39c0c9af0800000000000000
+      internalID: -388421638356903428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lavagna_Liceo3
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 142
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffa2a9aebbd9c1be0800000000000000
+      internalID: -1505154745028171009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lavagna_Liceo4
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 142
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab184dd5ade143650800000000000000
+      internalID: 6211623709276668346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lavagna_Liceo5
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 158
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64c4fa8c03b1e4050800000000000000
+      internalID: 5786592467556977734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Campanella_liceo1
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 90
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9973d04c5ec8ab40800000000000000
+      internalID: 5451834244551899548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lavagna_Liceo2
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 106
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b97f745d57995e990800000000000000
+      internalID: -7357305684871350373
       vertices: []
       indices: 
       edges: []
