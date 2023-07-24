@@ -46,8 +46,6 @@ public class SceneTransition : MonoBehaviour
 
             PlayerState.setPosition(initialPosition);
             LevelSystem.current.ChangeScene(indexFloor);
-
-            //GameObject.Find("Player").GetComponent<PlayerInput>().DeactivateInput();
         }
     }
 }
