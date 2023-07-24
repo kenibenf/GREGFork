@@ -24,23 +24,44 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         speed = PlayerState.speed;
-        rb.velocity = moveDelta * speed;
+        // ritorna i valori di x e y
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            speedBoost = 1;
+        }
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            speedBoost = 0;
+        }
+
+        if (speedBoost == 1)
+        {
+            x = Input.GetAxisRaw("Horizontal") * shiftDownSpeed;
+            y = Input.GetAxisRaw("Vertical") * shiftDownSpeed;
+        }
+        else
+        {
+            x = Input.GetAxisRaw("Horizontal");
+            y = Input.GetAxisRaw("Vertical");
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        // reset moveDelta
+        if (Input.GetAxisRaw("Horizontal") != 0 && Input.GetAxisRaw("Vertical") != 0)
+            moveDelta = new Vector2(x, y).normalized;
+        else
+            moveDelta = new Vector2(x, y);
+
+        this.Move();
         this.Animate();
     }
 
-    public void OnShift()
+    private void Move()
     {
-        speed = speed * shiftDownSpeed;
-    }
-    /* 
-        funzione chiamata ogni volta che l'utente preme wasd/freccette 
-        (se si vuole cambiare combinazione di tasti o aggiungerne altri si fa dal componente Player Input del Player)
-    */
-    public void OnMove(InputValue value)
-    {
-        moveDelta = value.Get<Vector2>(); // prende il valore da inputValue, che è passato tramite l'input system di unity
-        x = moveDelta.x;
-        y = moveDelta.y;
+        rb.velocity = moveDelta * speed;
     }
 
     private void Animate()
