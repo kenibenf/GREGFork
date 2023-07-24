@@ -1,0 +1,14 @@
+diff a/Assets/Artwork/Animations/CrossFade_end.anim b/Assets/Artwork/Animations/CrossFade_end.anim	(rejected hunks)
+@@ -239,4 +239,11 @@
+   m_EulerEditorCurves: []
+   m_HasGenericRootTransform: 0
+   m_HasMotionFloatCurves: 0
+-  m_Events: []
++  m_Events:
++  - time: 0
++    functionName: finishedCrossfade
++    data: 
++    objectReferenceParameter: {fileID: 0}
++    floatParameter: 0
++    intParameter: 0
++    messageOptions: 0
