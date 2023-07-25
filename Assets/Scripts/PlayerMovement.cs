@@ -35,16 +35,8 @@ public class PlayerMovement : MonoBehaviour
             speedBoost = 0;
         }
 
-        if (speedBoost == 1)
-        {
-            x = Input.GetAxisRaw("Horizontal") * shiftDownSpeed;
-            y = Input.GetAxisRaw("Vertical") * shiftDownSpeed;
-        }
-        else
-        {
-            x = Input.GetAxisRaw("Horizontal");
-            y = Input.GetAxisRaw("Vertical");
-        }
+        x = Input.GetAxisRaw("Horizontal");
+        y = Input.GetAxisRaw("Vertical");
     }
 
     private void FixedUpdate()
@@ -61,6 +53,17 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move()
     {
+        if (speedBoost == 1)
+        {
+            moveDelta.x *= shiftDownSpeed;
+            moveDelta.y *= shiftDownSpeed;
+        }
+        if ((moveDelta.x == 1 || moveDelta.x == -1) && (moveDelta.y == 1 || moveDelta.y == -1))
+        {
+            moveDelta.x *= (float)0.5;
+            moveDelta.y *= (float)0.5;
+        }
+
         rb.velocity = moveDelta * speed;
     }
 
