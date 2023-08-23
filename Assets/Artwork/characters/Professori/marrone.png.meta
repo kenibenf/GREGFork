@@ -7,7 +7,7 @@ TextureImporter:
     second: marrone_0
   - first:
       213: 1194942444555266407
-    second: button_red_0
+    second: marrone_1
   - first:
       213: 8156439871637543097
     second: marrone_2
@@ -116,6 +116,27 @@ TextureImporter:
       bones: []
       spriteID: 362bb8ad2bcb84fa0800000000000000
       internalID: -5816191442392206749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marrone_1
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 379
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 769e0ce72d9459010800000000000000
+      internalID: 1194942444555266407
       vertices: []
       indices: 
       edges: []

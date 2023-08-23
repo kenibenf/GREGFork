@@ -11,6 +11,9 @@ TextureImporter:
   - first:
       213: 8697342869924879532
     second: Caruso_2
+  - first:
+      213: -5246653708164119063
+    second: Caruso_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -158,6 +161,27 @@ TextureImporter:
       bones: []
       spriteID: cac16ab724b23b870800000000000000
       internalID: 8697342869924879532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Caruso_3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e5446910442037b0800000000000000
+      internalID: -5246653708164119063
       vertices: []
       indices: 
       edges: []
